@@ -21,7 +21,7 @@ angular
  * The back-up (default) administrator e-mail to use for support, 
  * in case the /api/contact endpoint is unavailable
  */
-.constant('SupportEmail', 'ndslabs-support@nationaldataservice.org')
+.constant('SupportEmail', 'kcoakley@sdsc.edu')
 
 // Landing App Routes
 .constant('LandingAppPath', '/landing')
@@ -51,9 +51,9 @@ angular
 /**
  * The name of the product to display in the UI and the URL to link to when clicked
  */
-.constant('OrgName', 'NDS')
-.constant('ProductName', 'Labs Workbench')
-.constant('ProductUrl', 'http://www.nationaldataservice.org/projects/labs.html')
+.constant('OrgName', 'Metabolomics Workbench')
+.constant('ProductName', 'Metabolomics Workbench Cloud')
+.constant('ProductUrl', 'https://www.cloud.metabolomicsworkbench.org/')
 
 /**
  * Helpful links to include in the landing page / navbar
@@ -79,7 +79,7 @@ angular
  * 
  * TODO: We assume this is running on the same machine as the apiserver.
  */ 
-.constant('ApiHost', 'www.local.ndslabs.org')
+.constant('ApiHost', 'www.cloud.metabolomicsworkbench.org/')
 .constant('ApiPort', '')
 .constant('ApiPath', '/api')
 .constant('ApiSecure', true) 
@@ -92,7 +92,7 @@ angular
 /** Store the value of the "rd" querystring parameter */
 .value('ReturnRoute', '')
 
-.constant('CookieOptions', { domain: '.local.ndslabs.org', secure: true, path: '/' })
+.constant('CookieOptions', { domain: '.cloud.metabolomicsworkbench.org', secure: true, path: '/' })
 
 /**
  * A shared store for our AuthInfo, done as a provider so that we
